@@ -19,4 +19,14 @@ source ${zsh_plugins}.zsh
 eval "$(starship init zsh)" 
 	#install: curl -sS https://starship.rs/install.sh | sh
 
+# Aliases
+if type exa >/dev/null 2>&1; then
+    alias ls="exa"
+    alias la="exa -lha"
+    alias l="exa -lh"
+fi
+
+if type bat >/dev/null 2>&1; then
+    alias cat="bat"
+fi
 
