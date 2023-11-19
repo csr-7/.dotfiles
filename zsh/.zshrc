@@ -19,15 +19,22 @@ source ${zsh_plugins}.zsh
 #eval "$(starship init zsh)" 
 	#install: curl -sS https://starship.rs/install.sh | sh
 
-# Aliases
+## Aliases
+# check if exa is installed and if it is setup alias for ls
 if type exa >/dev/null 2>&1; then
     alias ls="exa"
     alias la="exa -lha"
     alias l="exa -lh"
 fi
 
+# check if bat is installed and if it is setup alias for cat
 if type bat >/dev/null 2>&1; then
     alias cat="bat"
+fi
+
+# check if nvim is installed and if it is setup alias for vim
+if type nvim >/dev/null 2>&1; then
+    alias vim="nvim"
 fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
