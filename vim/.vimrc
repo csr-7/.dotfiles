@@ -5,9 +5,8 @@ set number
 syntax on
  
 " Tab length
-set tabstop=4
+set tabstop=2
 
 " Cursor Highlighting
 set cursorline
-highlight CursorLine ctermbg=none ctermfg=none gui=bold
 set cursorcolumn
