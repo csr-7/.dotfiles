@@ -16,7 +16,7 @@ source ${zsh_plugins}.zsh
     # Install:
 	# Mac: brew install starship
 	# Linux: curl -sS https://starship.rs/install.sh | sh
-eval "$(starship init zsh)" 
+#eval "$(starship init zsh)" 
 	#install: curl -sS https://starship.rs/install.sh | sh
 
 # Aliases
@@ -31,4 +31,4 @@ if type bat >/dev/null 2>&1; then
 fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
