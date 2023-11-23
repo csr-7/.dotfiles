@@ -12,19 +12,12 @@ if [[ ! ${zsh_plugins}.zsh -nt ${zsh_plugins}.txt ]]; then
 fi
 source ${zsh_plugins}.zsh
 
-# Rust powered Starship prompt
-    # Install:
-	# Mac: brew install starship
-	# Linux: curl -sS https://starship.rs/install.sh | sh
-#eval "$(starship init zsh)" 
-	#install: curl -sS https://starship.rs/install.sh | sh
-
 ## Aliases
 # check if exa is installed and if it is setup alias for ls
 if type exa >/dev/null 2>&1; then
-    alias ls="exa"
+    alias ls="exa -lh"
     alias la="exa -lha"
-    alias l="exa -lh"
+    alias l="exa"
 fi
 
 # check if bat is installed and if it is setup alias for cat
@@ -36,6 +29,16 @@ fi
 if type nvim >/dev/null 2>&1; then
     alias vim="nvim"
 fi
+
 alias py="python3"
+
+## Prompt Customization
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Rust powered Starship prompt
+    # Install:
+	# Mac: brew install starship
+	# Linux: curl -sS https://starship.rs/install.sh | sh
+#eval "$(starship init zsh)" 
+	#install: curl -sS https://starship.rs/install.sh | sh
