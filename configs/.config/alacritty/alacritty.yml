@@ -3,7 +3,7 @@ window:
   dimensions:
     columns: 85
     lines: 20
-  opacity: .85
+  opacity: .90
 
 # Font configuration (changes require restart)
 font:
