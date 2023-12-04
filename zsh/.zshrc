@@ -14,10 +14,10 @@ source ${zsh_plugins}.zsh
 
 ## Aliases
 # check if exa is installed and if it is setup alias for ls
-if type exa >/dev/null 2>&1; then
-    alias ls="exa -lh"
-    alias la="exa -lha"
-    alias l="exa"
+if type eza >/dev/null 2>&1; then
+    alias ls="eza -lh"
+    alias la="eza -lha"
+    alias l="eza"
 fi
 
 # check if bat is installed and if it is setup alias for cat
