@@ -30,6 +30,11 @@ if type nvim >/dev/null 2>&1; then
     alias vim="nvim"
 fi
 
+# Screenfetch startup
+if type screenfetch >/dev/null 2>&1; then
+    screenfetch
+fi
+
 alias py="python3"
 
 ## Prompt Customization
